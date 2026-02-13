@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stellantis-playwright-worker
+    env: node
+    plan: free
+    buildCommand: |
+      npm install
+      npx playwright install chromium
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
