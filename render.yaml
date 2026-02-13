@@ -11,3 +11,5 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 20
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: 0
