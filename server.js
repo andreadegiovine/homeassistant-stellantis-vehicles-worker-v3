@@ -149,7 +149,7 @@ app.post("/", async (req, res) => {
       context = await browser.newContext({
         userAgent:
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1024, height: 600 },
         javaScriptEnabled: true,
         bypassCSP: true,
         ignoreHTTPSErrors: true,
